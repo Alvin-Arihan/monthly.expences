@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<input value='Print' type='button' onclick='handlePrint()' />
+<script type="text/javascript">
+         const handlePrint = () => {
+            var actContents = document.body.innerHTML;
+            document.body.innerHTML = actContents;
+            window.print();
+         }
+      </script>
+<footer class="text-center">
+  Copyright © Alvin
+</footer>
+
+</html>

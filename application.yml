@@ -1,0 +1,19 @@
+
+server:
+  port : 9777
+spring :
+  application:
+    name : monthly_expences
+  jpa:
+   hibernate:
+    ddl-auto : update
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  show-sql: true
+
+  datasource:
+    url : jdbc:mysql://${MYSQL_HOST:localhost}:3306/monthly?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: root
+    #driver-class-name : com.mysql.cj.jdbc.Driver
